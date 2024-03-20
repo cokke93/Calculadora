@@ -8,8 +8,7 @@ body {
   width: 350px;
   height: 550px;
   padding: 8px;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 150px auto 20px auto;
   border-radius: 25px;
   box-shadow: 10px 10px 010px black;
 }
