@@ -8,7 +8,7 @@
 
 ## 📝 Descripción
 
-Esta es una calculadora web desarrollada utilizando HTML, CSS y JavaScript. <br> La calculadora permite realizar operaciones básicas de aritmética como suma, resta, multiplicación y división, así como cambiar el color de la carcasa aleatoriamente.
+Esta es una calculadora web desarrollada con HTML, CSS y JavaScript. <br> La calculadora permite realizar operaciones básicas de aritmética como suma, resta, multiplicación y división, así como cambiar el color de la carcasa aleatoriamente.
 
 ## 🚀 Tecnologías
 
