@@ -9,6 +9,7 @@ body {
   height: 550px;
   padding: 8px;
   margin: 150px auto 20px auto;
+  border: 5px outset gray;
   border-radius: 25px;
   box-shadow: 10px 10px 010px black;
 }
@@ -35,7 +36,7 @@ body {
   height: 12%;
   margin: 7px;
   border-radius: 7px;
-  box-shadow: 0 4px #999;
+  box-shadow: 0px 6px grey;
   font-weight: bolder;
   font-size: 1.3em;
   cursor: pointer;
