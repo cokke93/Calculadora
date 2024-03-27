@@ -2,10 +2,6 @@
  Web Calculator ➕
 </h1>
 
-<p align="center">
-<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/FRxhyVjY/calc2.png' border='0' alt='calc2'/></a>
-</p>
-
 ## 📝 Description.
 
 This is a web calculator developed with HTML, CSS and JavaScript. <br> The calculator allows you to perform basic arithmetic operations such as addition, subtraction, multiplication and division, as well as change the color of the case randomly.
@@ -17,3 +13,6 @@ This is a web calculator developed with HTML, CSS and JavaScript. <br> The calcu
 - HTML
 - CSS
 - JavaScript
+
+  ![68747470733a2f2f692e706f7374696d672e63632f4652786879566a592f63616c63322e706e67](https://github.com/cokke93/Calculadora/assets/157584368/638879b0-5fa7-4003-88a0-9073c2d2fb75)
+
