@@ -1,17 +1,16 @@
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background-color: #514880;
+  height: 100dvh;
+}
+
+#container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 50%;
+  height: 90%;
+  margin: auto;
 }
 
 #calculadora {
@@ -19,15 +18,17 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 20%;
-  height: 65%;
+  width: 35%;
+  min-width: 400px;
+  min-height: 700px;
   padding: 0.5em;
-  min-width: 320px;
-  min-height: 530px;
   border: 5px outset gray;
   border-radius: 35px;
   box-shadow: 10px 10px 10px black;
   background-color: rgb(255, 255, 255);
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 1;
 }
 
 #pantalla {
