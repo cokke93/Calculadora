@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <div id="container">
-        <section id="calculadora">
+    <div id="container" class="flex-dir">
+        <section id="calculadora" class="flex-dir">
             <input type="text" id="pantalla" placeholder="0" />
             <button type="reset" class="boton reset" onclick="resetPantalla()">
                 C
@@ -86,6 +86,7 @@
             </button>
         </section>
         <div id="contenedor-color">
+            <p id="color">#ffffff</p>
             <button id="botonColor" onclick="cambiarColor()">Cambiar Color</button>
         </div>
     </div>

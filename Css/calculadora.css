@@ -1,7 +1,11 @@
 body {
   background-color: #514880;
+  margin: 0;
+  padding: 0;
   height: 100dvh;
 }
+
+/*Principal*/
 
 #container {
   display: flex;
@@ -10,7 +14,7 @@ body {
   flex-direction: column;
   width: 35%;
   height: 80%;
-  margin:50px auto;
+  margin: 50px auto;
 }
 
 #calculadora {
@@ -26,13 +30,14 @@ body {
   border-radius: 35px;
   box-shadow: 10px 10px 10px black;
   background-color: rgb(255, 255, 255);
+  transition-duration: 0.8s;
 }
 
 #pantalla {
   width: 90%;
   height: 20%;
   margin: 10px auto;
-  padding: 0.1em;
+  padding: 10px;
   text-align: right;
   font-weight: bolder;
   font-size: 4rem;
@@ -42,11 +47,13 @@ body {
   pointer-events: none;
 }
 
+/*Buttons*/
+
 .boton {
   background-color: #a4a6ab;
   width: 21%;
   height: 12%;
-  margin: 0.2em;
+  margin: 5px;
   border-radius: 7px;
   box-shadow: 0px 6px grey;
   font-weight: bolder;
@@ -65,61 +72,70 @@ body {
   box-shadow: 0px 0px 3px 3px #999;
 }
 
-.boton.reset {
+.operador {
+  background-color: orange;
+  color: white;
+}
+
+
+.igual,
+.reset {
   width: 45%;
   height: 12%;
   color: black;
-  background-color: #ff9f0a;
-  text-shadow: 2px 2px 2px white;
+  background-color: orange;
+  text-shadow: 2px 2px 2px black;
+
 }
 
-.boton.reset:active {
-  color: white;
+.igual:active,
+.reset:active {
+  color: black;
   text-shadow: 2px 2px 2px black;
 }
 
-.boton.operador {
-  background-color: #ff9f0a;
-  color: white;
-}
 
-.boton.operador:active {
-  color: black;
-}
-
-.boton.igual {
-  width: 45%;
-  height: 12%;
-  color: white;
-}
+/*Color Button*/
 
 #contenedor-color {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  justify-content: flex-end;
-  height: 5%;
+  margin-top: 20px;
+  width: 35%;
+  height: 20%;
+  background-color: white;
+  border: 5px solid black;
 }
 
 #botonColor {
   color: black;
-  border: 2px outset;
+  border: 2px solid black;
   border-radius: 10px;
   font-weight: bolder;
+  font-size: 1rem;
+  margin: 0;
 }
 
-#botonColor:hover {
-  box-shadow: 0px 0px 3px 3px white;
+#color{
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
 }
+
+
+/*Query*/
 
 @media screen and (max-width: 768px) {
   #container {
     width: 100%;
+    height: 90%;
   }
 
   #calculadora {
-    width: 95%;
-    height: 85%;
-
+    width: 85%;
+    height: 100%;
     min-width: unset;
     min-height: unset;
   }
@@ -128,7 +144,7 @@ body {
     width: 20%;
     height: 10%;
     font-size: 1.5rem;
-    margin: 0.34em;
+    margin: 7px;
   }
 
   #pantalla {
@@ -148,5 +164,5 @@ body {
     background-color: #ff9f0a;
     text-shadow: 2px 2px 2px white;
   }
-  
+
 }

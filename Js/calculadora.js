@@ -33,8 +33,13 @@ function calcularResultado() {
 function cambiarColor() {
   let calculadora = document.getElementById("calculadora");
   let boton = document.getElementById("botonColor");
+  let codigo = document.getElementById("color");
 
-  calculadora.style.backgroundColor =
-    "#" + Math.floor(Math.random() * 16777215).toString(16);
-  boton.style.backgroundColor = calculadora.style.backgroundColor;
+
+  let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+  calculadora.style.backgroundColor = randomColor;
+  boton.style.backgroundColor = randomColor;
+
+  codigo.innerText = randomColor;
 }
