@@ -1,22 +1,37 @@
+//Variables 
+const botonReset = document.getElementById("reset")
+const botonIgual = document.getElementById("igual")
+const botonColor = document.getElementById("botonColor")
+const botonBorrar = document.getElementById("borrar")
+const pantalla = document.getElementById("pantalla")
+
+//Agregar digito
+
 function agregarDigito(digito) {
   document.getElementById("pantalla").value += digito;
 }
 
-function borrarUltimoCaracter() {
+//Borrar ultimo caracter
+
+botonBorrar.addEventListener("click", () => {
   let pantalla = document.getElementById("pantalla");
   if (pantalla.value === "Error!") {
     pantalla.value = "";
   } else {
     pantalla.value = pantalla.value.slice(0, -1);
   }
-}
+})
 
-function resetPantalla() {
+//Resetear pantalla
+
+botonReset.addEventListener("click", () => {
+
   document.getElementById("pantalla").value = "";
-}
+})
 
-function calcularResultado() {
-  let pantalla = document.getElementById("pantalla");
+//Calcular resultado
+
+botonIgual.addEventListener("click", () => {
 
   try {
     if (pantalla.value != "") {
@@ -28,18 +43,19 @@ function calcularResultado() {
   } catch {
     pantalla.value = "Error!";
   }
-}
+})
 
-function cambiarColor() {
+//Cambiar color calculadora
+
+botonColor.addEventListener("click", () => {
+
   let calculadora = document.getElementById("calculadora");
-  let boton = document.getElementById("botonColor");
   let codigo = document.getElementById("color");
-
-
   let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
 
   calculadora.style.backgroundColor = randomColor;
-  boton.style.backgroundColor = randomColor;
-
+  botonColor.style.backgroundColor = randomColor;
   codigo.innerText = randomColor;
-}
+})
+
+
