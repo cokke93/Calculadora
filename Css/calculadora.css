@@ -103,8 +103,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin-top: 20px;
-  width: 35%;
-  height: 20%;
+ padding: 20px;
   background-color: white;
   border: 5px solid black;
 }
@@ -115,7 +114,6 @@ body {
   border-radius: 10px;
   font-weight: bolder;
   font-size: 1rem;
-  margin: 0;
 }
 
 #color{
